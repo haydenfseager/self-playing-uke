@@ -5,7 +5,10 @@ This is a Python project that allowed me to **automatically play a ukulele** by 
 
 ## ✔️ Project Components
 * [Python](https://www.python.org/doc/essays/blurb/)
-* 
+* [Mido Library] (https://mido.readthedocs.io/en/latest/)
+* [MIDI Note Chart] (https://computermusicresource.com/midikeys.html)
+* [Time Library] (https://docs.python.org/3/library/time.html)
+* [Adafruit Servo Kit Library] (https://docs.circuitpython.org/projects/servokit/en/latest/)
 * [Design Drawings](https://github.com/key50/Senior-Project)
 
 ## 📜 Project Description:
