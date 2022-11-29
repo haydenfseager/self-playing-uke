@@ -1,10 +1,11 @@
 # 🎸 Self-Playing-Uke
-This is a Python project that allowed me to **automatically play a ukulele** by using the Python library mido 
+This is a Python project that allowed me to **automatically play a ukulele** by using the Python library [Mido](https://mido.readthedocs.io/en/latest/)
 
 *Note:* This is merely the code for the project. This took months to manufacture a mechanical working product to accompany it.
 
 ## ✔️ Project Components
 * [Python](https://www.python.org/doc/essays/blurb/)
+* 
 * [Design Drawings](https://github.com/key50/Senior-Project)
 
 ## 📜 Project Description:
@@ -24,3 +25,13 @@ The main **challenges**
 * 
 * 
 *
+## Appendix
+Here is an explantation of each file individually to explain how the entire system fits together.
+
+# servo-main.py
+# midi-file-parse.py
+# print-midi-file.py
+# note-mapping.py
+# servo-test-adafruit.py
+# servo-test2.py
+

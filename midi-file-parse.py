@@ -1,7 +1,7 @@
 # This is for creating a list with (note_value, duration)
 
 from mido import MidiFile
-from range_mapping import *
+from note-mapping import *
 
 
 #filename = '/home/pi/Desktop/RaspberryPi Servo code/midis/hot_cross_bunsTPT.mid'
