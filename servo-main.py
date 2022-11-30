@@ -1,7 +1,7 @@
 from time import sleep
 from threading import Thread
 from adafruit_servokit import ServoKit
-from midi_file_parse import *
+from midi-file-parse import *
 
 # instantiate servo array from hats
 kit = ServoKit(channels=16)

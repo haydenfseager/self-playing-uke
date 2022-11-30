@@ -1,4 +1,4 @@
-# 🎸 Self-Playing-Uke
+# 🎸 Self-Playing-Ukulele
 This is a Python project that allowed me to **automatically play a ukulele** by using the Python library [Mido](https://mido.readthedocs.io/en/latest/)
 
 *Note:* This is merely the code for the project. This took months to manufacture a mechanical working product to accompany it.
@@ -27,9 +27,25 @@ Although both brass and woodwind instruments would be relatively easy to design 
 
 You could potentially use *any* string instrument (e.g. violin, viola, cello) but I think the most practical are guitar and ukulele. I decided to go with the ukulele because it is relatively small and light as compared to other string instruments. Additionally, the method we used to strum and press the strings involved rotating a small servo motor back and forth. We were unsure if the 9g motor we used would have enough torque to press the heavy steel stringsof a guitar (Yes, I know we can change the strings, but saving money was also the goal here).
 
-Once you've finally created the **strumming** and **pressing** hardware mechanisms, and finally figured out how to move servos in conjunction to play individual notes, the final step is to create some way of playing a song. You could just hard-code a song, but music is very difficult to hard-code. You need tempo, note-pitch, note-duration, Oh, and don't forget that the note duration depends on the tempo, so make sure you include that in there. This would take forever if you did it this way. Luckily, a language called **MIDI** is here to save the day!
+Once you've finally created the **strumming** and **pressing** hardware mechanisms, and finally figured out how to move servos in conjunction to play individual notes, the final step is to create some way of playing a song. You could just hard-code a song, but music is very difficult to hard-code. You need tempo, note-pitch, note-duration, Oh, and don't forget that the note-duration depends on the tempo, so make sure you include that in there. This would take forever if you did it this way. Luckily, a language called **MIDI** is here to save the day!
 
-From what I understand, MIDI is just another form of binary that is used to represent music and its components.
+From what I understand, MIDI is just another form of binary that is used to represent music and its components. Unfortunately, most music is made without MIDI; however, common songs like "Happy Birthday", or "Hot Cross Buns" are prevalent enough that a simple Google search can give you their free MIDI file download. 
+
+To read a MIDI file, I first needed to know the information it contained. I used the [Mido Library](https://mido.readthedocs.io/en/latest/) in python to show me what a MIDI file contained. Specifically look at this [code](https://github.com/mido/mido/blob/main/examples/midifiles/print_midi_file.py) from the Mido library Github documentation. 
+
+This is the part where it gets **a little tricky**. (Disclaimer: I don't know too much about MIDI) For this project specifically, the only information we care about is:
+
+1. Note-pitch (Should we play C4 or D4)
+2. Note-duration (Should this be a quarter note or half note)
+3. Tempo
+
+There is a **fourth** part but that has to do with hardware and will come in later.
+
+# Note Pitch
+
+I won't go into the physics behind note pitch, just know that certain combinations of pressing *here* and strumming *this string* create different notes. Below is a graphic of those notes.
+
+![test](https://3.bp.blogspot.com/-k_bF_-PPERU/Vz4bqrVKqjI/AAAAAAAAJzs/IkL-1I-2zfEVTF-kCe4qbBT4szE5VbUvACLcB/s1600/roadmap.jpg)
 
 The basic **function** of this project is 
 
