@@ -35,23 +35,30 @@ To read a MIDI file, I first needed to know the information it contained. I used
 
 This is the part where it gets **a little tricky**. (Disclaimer: I don't know too much about MIDI) For this project specifically, the only information we care about is:
 
-1. Note-pitch (Should we play C4 or D4)
-2. Note-duration (Should this be a quarter note or half note)
-3. Tempo
+1. [Note-pitch](#notepitch) (Should we play C4 or D4)
+2. [Note-duration](#noteduration) (Should this be a quarter note or half note)
+3. [Tempo](#tempo)
 
 There is a **fourth** part but that has to do with hardware and will come in later.
 
-# Note Pitch
+## Note Pitch<a name="notepitch"></a>
 
 I won't go into the physics behind note pitch, just know that certain combinations of pressing *here* and strumming *this string* create different notes. Below is a graphic of those notes.
 
-![test](https://3.bp.blogspot.com/-k_bF_-PPERU/Vz4bqrVKqjI/AAAAAAAAJzs/IkL-1I-2zfEVTF-kCe4qbBT4szE5VbUvACLcB/s1600/roadmap.jpg)
+![](https://github.com/haydenfseager/self-playing-uke/blob/main/uke-fretboard.png?raw=true)
+
+
+
+## Note Duration<a name="noteduration"></a>
+
+## Tempo<a name="tempo"></a>
 
 The basic **function** of this project is 
 
 For this **implementation**, I used **Python** 
 
-***TLDR***: This is my senior design project from college. The main components are:
+## TLDR: 
+This is my senior design project from college. The main components are:
 1. A string instrument (Ukulele)
 2. A mechanism to strum and press on the strings
 3. Software to convert servo motor motions to notes by way of combining the strumming and pressing motions
